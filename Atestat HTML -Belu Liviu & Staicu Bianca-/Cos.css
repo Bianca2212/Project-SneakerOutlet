@@ -1,0 +1,284 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #cbcbcd;
+}
+
+/* Aici incepe titlul si meniul */
+
+h1 a:visited {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    font-family: 'Doppio One';
+    font-size: 20px;
+}
+
+    li a {
+        display: block;
+        padding: 10px;
+        background-color: black;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+        li a:link {
+            color: white;
+        }
+
+        li a:visited {
+            color: white;
+        }
+
+        li a:hover {
+            background-color: rgb(117, 117, 117);
+        }
+
+table td {
+    background-color: black;
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
+    td:hover {
+        background-color: #4b4b4e;
+    }
+
+    td a {
+        color: white;
+    }
+
+a {
+    text-decoration: none;
+}
+
+.titlu {
+    background-color: white;
+    padding: 2px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: 'Doppio One';
+    text-decoration: none;
+}
+
+.meniu {
+    background-color: black;
+    padding: 1px;
+}
+
+nav ul {
+    background-color: black;
+}
+
+/* Aici incep caracteristicile */
+
+.cerinte {
+    background-color: #24262b;
+}
+
+.cerinta {
+    display: inline;
+    color: white;
+    font-family: 'Doppio One';
+    font-size: 25px;
+    margin-left:315px;
+}
+
+/* Butonul */
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+/* Aici incepe footer-ul */
+
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+    .footer-col h4 {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+    .footer-col .social-links a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul2 {
+    list-style: none;
+}
+
+p2 {
+    text-align: center;
+    color: #ede9dc;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+p3 {
+    text-align: center;
+    color: #ede9dc;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    color: #ede9dc;
+}

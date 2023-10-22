@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Cos</title>
+    <link rel="stylesheet" href="Cos2.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="poze/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="poze/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="retur.js" async></script>
+</head>
+<body>
+
+    <script type="text/javascript" src="webjava.js"></script>
+    <div class="titlu">
+        <h1>
+            <a href="web.html" title="Home">B%L PANTOFI</a>
+        </h1>
+    </div>
+    <div class="meniu">
+        <ul>
+            <li><a href="web.html" title="Home">Acasa</a></li>
+            <li><a href="Barbati.html">Pantofi Barbati</a></li>
+            <li><a href="Femei.html">Pantofi Femei</a></li>
+            <li><a href="cos2.html">Cos</a></li>
+            <li><a href="retur.html">Retur</a></li>
+        </ul>
+    </div>
+
+    <!-- Formular -->
+
+    <section>
+        <div class="formular">
+            <form action="https://formspree.io/f/xjvjkzqz" method="POST" id="my-form">
+                <div class="div-form">
+                    <label for="Nume"><strong> Nume </strong></label>
+                    <input type="text" name="Nume" id="Nume" required>
+                </div>
+                <div class="div-form">
+                    <label for="Prenume"><strong>Prenume </strong></label>
+                    <input type="text" name="Prenume" id="Prenume" required>
+                </div>
+                <div class="div-form">
+                    <label for="Email"><strong>Email </strong></label>
+                    <input type="Email" name="Email" id="Email" required>
+                </div>
+                <div class="div-form">
+                    <label for="Marimea"><strong>Marimea</strong></label>
+                    <input type="number" name="Marimea" id="Marimea" min="22" max="47" step="1">
+                </div>
+                <div class="div-form">
+                    <div>
+                        <label for="bio"><strong>ID produse</strong></label>
+                        <textarea id="ID" name="ID produse"></textarea>
+                    </div>
+                </div>
+                <div class="div-form">
+                    <label for="phone"><strong>Numar de telefon </strong></label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div class="div-form">
+                    <label for="Adresa"><strong>Adresa </strong><p>Judet ,Oras, Strada, Numar, Cod postal</p></label>
+                    <input type="text" name="Adresa" id="Adresa">
+                </div>
+                <div class="div-form">
+                    <strong>Metoda de transport</strong>
+                    <div>
+                        <label for="Curier">Curier</label>
+                        <input type="checkbox" name="Curier" id="Curier">
+                    </div>
+                    <div>
+                        <label for="Posta romana">Posta romana</label>
+                        <input type="checkbox" name="Posta romana" id="Posta romana">
+                    </div>
+                    <div>
+                        <label for="bio"><strong>Alte precizari</strong></label>
+                        <textarea id="Alt motiv" name="Alt motiv"></textarea>
+                    </div>
+                </div>
+                <div class="div-form">
+                    <strong>Metoda de plata</strong>
+                    <div>
+                        <label for="Rambus">Rambus</label>
+                        <input type="checkbox" name="Rambus" id="Rambus">
+                    </div>
+                    <div>
+                        <label for="Online cu card bancar">Online cu card bancar</label>
+                        <input type="checkbox" name="Online cu card bancar" id="Online cu card bancar">
+                    </div>
+                </div>
+                    <button type="reset">Reseteaza</button>
+                    <button type="submit">Trimite</button>
+            </form>
+        </div>
+        <div id="status"></div>
+    </section>
+
+    <script src="jquery.js"></script>
+    <script src="fm.selector.jquery.js"></script>
+    <script>
+        $('#multibox').selector();
+    </script>
+
+
+    <!--Footer-ul-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row2">
+                <div class="footer-col">
+                    <h4>RELATII CLIENTI</h4>
+                    <p>Contactează-ne telefonic: 0729 959 024/ 0763 653 532</p>
+                    <p>
+                        Luni – Vineri: 07:30 - 23:00
+                        Sambata: 08:00 - 18.00
+                        Duminica: 09:00 - 17:00
+                    </p>
+                    <br>
+                    <p>Sau scrieti-ne pe adresa de email si va vom contacta in cel mai scurt timp: b%lpantofi@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>METODE DE PLATA</h4>
+                    <img src="poze/card1.jpg" width="100" length="100">
+                    <br>
+                    <p>De asemenea, acceptam si plata la livrare</p>
+
+                </div>
+                <div class="footer-col">
+                    <h4>OPTIUNI DE LIVRARE</h4>
+                    <img src="poze/livrare.jpg" width="100" length="100">
+
+                </div>
+                <div class="footer-col">
+                    <h4>SOCIAL MEDIA</h4>
+                    <div class="social-links">
+                        <a href="https://youtube.com" target="blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://facebook.com" target="blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p2><img src="poze/shipping.png" width="100" length="100"></p2>
+        <p2>Livrare gratuita in easybox</p2>
+        <p3>
+            <img src="poze/return.png" width="100" length="100">
+            <p3>Retur gratuit in 30 zile</p3>
+    </footer>
+
+</body>
+</html>

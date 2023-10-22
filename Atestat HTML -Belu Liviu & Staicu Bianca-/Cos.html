@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Cos</title>
+    <link rel="stylesheet" href="cos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="poze/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="poze/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="fm.selectator.jquery.css" rel="stylesheet"/>
+    <script src="cos.js" async></script>
+    <style>
+        .container{
+            width:600px;
+            margin:30px auto;
+        }
+        select{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+
+    <script type="text/javascript" src="webjava.js"></script>
+    <div class="titlu">
+        <h1>
+            <a href="web.html" title="Home">B%L PANTOFI</a>
+        </h1>
+    </div>
+    <div class="meniu">
+        <ul>
+            <li><a href="web.html" title="Home">Acasa</a></li>
+            <li><a href="Barbati.html">Pantofi Barbati</a></li>
+            <li><a href="Femei.html">Pantofi Femei</a></li>
+            <li><a href="Cos.html">Cos</a></li>
+            <li><a href="retur.html">Retur</a></li>
+        </ul>
+    </div>
+    
+
+    <!-- Alegerea -->
+
+    <div class="container">
+        <h3>multiplu</h3>
+        <select id="multibox" multiple>
+            <option value="1" data-subtitle="#0001" data-left="poze/1.jpg">#0001</option>
+            <option value="2" data-subtitle="#0002" data-left="poze/2.jpg">#0002</option>
+            <option value="2" data-subtitle="#0002" data-left="poze/2.jpg">#0003</option>
+            <option value="2" data-subtitle="#0002" data-left="poze/2.jpg">#0004</option>
+            <option value="2" data-subtitle="#0002" data-left="poze/2.jpg">#0005</option>
+            <option value="2" data-subtitle="#0002" data-left="poze/2.jpg">#0006</option>
+        </select>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script scr="fm.selectator.jquery.js"></script>
+    <script>
+        $('#multibox').selector();
+    </script>
+
+    <!--Footer-ul-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row2">
+                <div class="footer-col">
+                    <h4>RELATII CLIENTI</h4>
+                    <p>Contactează-ne telefonic: 0729 959 024/ 0763 653 532</p>
+                    <p>
+                        Luni – Vineri: 07:30 - 23:00
+                        Sambata: 08:00 - 18.00
+                        Duminica: 09:00 - 17:00
+                    </p>
+                    <br>
+                    <p>Sau scrieti-ne pe adresa de email si va vom contacta in cel mai scurt timp: b%lpantofi@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>METODE DE PLATA</h4>
+                    <img src="poze/card1.jpg" width="100" length="100">
+                    <br>
+                    <p>De asemenea, acceptam si plata la livrare</p>
+
+                </div>
+                <div class="footer-col">
+                    <h4>OPTIUNI DE LIVRARE</h4>
+                    <img src="poze/livrare.jpg" width="100" length="100">
+
+                </div>
+                <div class="footer-col">
+                    <h4>SOCIAL MEDIA</h4>
+                    <div class="social-links">
+                        <a href="https://youtube.com" target="blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://facebook.com" target="blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p2><img src="poze/shipping.png" width="100" length="100"></p2>
+        <p2>Livrare gratuita in easybox</p2>
+        <p3>
+            <img src="poze/return.png" width="100" length="100">
+            <p3>Retur gratuit in 30 zile</p3>
+    </footer>
+
+</body>
+</html>

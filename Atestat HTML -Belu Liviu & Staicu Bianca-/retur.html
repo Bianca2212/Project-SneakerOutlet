@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULAR RETUR</title>
+    <link rel="stylesheet" href="retur.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="poze/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="poze/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <script src="retur.js"></script>
+    <!--Titlu si meniu-->
+    
+    <div class="titlu">
+        <h1>
+            <a href="web.html" title="Home">B%L PANTOFI</a>
+        </h1>
+    </div>
+    <div class="meniu">
+        <ul>
+            <li><a href="web.html" title="Home">Acasa</a></li>
+            <li><a href="Barbati.html">Pantofi Barbati</a></li>
+            <li><a href="Femei.html">Pantofi Femei</a></li>
+            <li><a href="cos2.html">Cos</a></li>
+            <li><a href="retur.html">Retur</a></li>
+        </ul>
+    </div>
+
+    <!-- Formularul de retur -->    
+
+ <section>
+     <div class="formular">
+           <form action="https://formspree.io/f/xjvjkzqz" method="POST" id="my-form">
+                <div class="div-form">
+                      <label for="Nume"><strong> Nume </strong></label>
+                      <input type="text" name="Nume" id="Nume" required>
+                </div>
+               <div class="div-form">
+                     <label for="Prenume"><strong>Prenume </strong></label>
+                     <input type="text" name="Prenume" id="Prenume" required>
+               </div>
+                <div class="div-form">
+                      <label for="Email"><strong>Email </strong></label>
+                      <input type="Email" name="Email" id="Email" required>
+                </div>
+                <div class="div-form">
+                      <label for="Numarul de comanda"><strong>Numarul de comanda </strong></label>
+                      <input type="number" name="Numarul de comanda" id="Numarul de comanda" min="1" max="999999" step="1">
+                </div>
+                <div class="div-form">
+                      <label for="Data plasarii comenzii"><strong>Data plasarii comenzii</strong></label>
+                      <input type="date" name="Data plasarii comenzii" id="Data plasarii comenzii" min="2020-01-01">
+                </div>
+                <div class="div-form">
+                      <strong>De ce returnati acest produs?</strong>
+                      <div>
+                              <label for="Model gresit">Model gresit</label>
+                              <input type="checkbox" name="Model gresit" id="Model gresit">
+                      </div>
+                      <div>
+                              <label for="Marime gresita">Marime gresita</label>
+                              <input type="checkbox" name="Marime gresita" id="Marime gresita">
+                              <div>
+                                  <label for="bio">Alt motiv</label>
+                                  <textarea id="Alt motiv" name="Alt motiv"></textarea>
+                              </div>
+                      </div>
+                </div>
+                <div class="div-form">
+                      <label for="phone"><strong>Phone </strong></label>
+                      <input type="tel" name="phone" id="phone">
+                </div>
+                <button type="reset">Reseteaza</button>
+                <button type="submit">Trimite</button>
+           </form>
+    </div>
+    <div id="status"></div>
+</section>
+
+    <!--Footer-ul-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row2">
+                <div class="footer-col">
+                    <h4>RELATII CLIENTI</h4>
+                    <p>Contactează-ne telefonic: 0729 959 024/ 0763 653 532</p>
+                    <p>
+                        Luni – Vineri: 07:30 - 23:00
+                        Sambata: 08:00 - 18.00
+                        Duminica: 09:00 - 17:00
+                    </p>
+                    <br>
+                    <p>Sau scrieti-ne pe adresa de email si va vom contacta in cel mai scurt timp: b%lpantofi@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>METODE DE PLATA</h4>
+                    <img src="poze/card1.jpg" width="100" length="100">
+                    <br>
+                    <p>De asemenea, acceptam si plata la livrare</p>
+
+                </div>
+                <div class="footer-col">
+                    <h4>OPTIUNI DE LIVRARE</h4>
+                    <img src="poze/livrare.jpg" width="100" length="100">
+
+                </div>
+                <div class="footer-col">
+                    <h4>SOCIAL MEDIA</h4>
+                    <div class="social-links">
+                        <a href="https://youtube.com" target="blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://facebook.com" target="blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p2><img src="poze/shipping.png" width="100" length="100"></p2>
+        <p2>Livrare gratuita in easybox</p2>
+        <p3>
+            <img src="poze/return.png" width="100" length="100">
+            <p3>Retur gratuit in 30 zile</p3>
+    </footer>
+
+</body>
+</html>

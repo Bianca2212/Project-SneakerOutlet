@@ -1,0 +1,413 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #cbcbcd;
+}
+
+/* Aici incepe titlul si meniul */
+
+h1 a:visited {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    font-family: 'Doppio One';
+    font-size: 20px;
+}
+
+    li a {
+        display: block;
+        padding: 10px;
+        background-color: black;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+        li a:link {
+            color: white;
+        }
+
+        li a:visited {
+            color: white;
+        }
+
+        li a:hover {
+            background-color: rgb(117, 117, 117);
+        }
+
+table td {
+    background-color: black;
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
+    td:hover {
+        background-color: #4b4b4e;
+    }
+
+    td a {
+        color: white;
+    }
+
+a {
+    text-decoration: none;
+}
+
+.titlu {
+    background-color: white;
+    padding: 2px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: 'Doppio One';
+    text-decoration: none;
+}
+
+.meniu {
+    background-color: black;
+    padding: 1px;
+}
+
+nav ul {
+    background-color: black;
+}
+
+/* Titlu site */
+
+.titlu-site{
+    font-family: 'Doppio One';
+    color:black;
+}
+
+span {
+    background-image: linear-gradient( transparent calc(65% - 5px), darken(white, 15%) 5px);
+    background-size: 0;
+    background-repeat: no-repeat;
+    display: inline;
+    transition: 0.5s ease;
+}
+/* Aici incep produsele */
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.shop-item {
+    margin: 80px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family:'Doppio One';
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 240px;
+    width: 300px;
+    padding: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+}
+
+/* Poza marita */
+
+#lb-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+    #lb-back.show {
+        visibility: visible;
+        opacity: 1;
+    }
+#lb-img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+    #lb-img img {
+        width: 800px;
+        height: 700px;
+        margin: 0 auto;
+    }
+        
+ /* Poza marita se termina */
+
+.shop-item-details {
+    display: flex;
+    padding: 22px 5px;
+    text-align: center;
+}
+
+.shop-item-price {
+    background-color: black;
+    color: white;
+    flex-grow: 3;
+    font-family: 'Doppio One';
+    align-items: center;
+    font-size: 20px;
+    transition: all 0.4s ease;
+}
+
+
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .55em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% .2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    transition: all 0.4s ease;
+}
+
+    .column:hover {
+        background-color: rgb(117, 117, 117)
+    }
+
+.column span {
+        
+    transition: all 0.4s ease;
+}
+.column:hover span{
+    color:white;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 150px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+p {
+    color: #ede9dc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul2 {
+    list-style: none;
+}
+
+p2 {
+    text-align: center;
+    color: #ede9dc;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+p3 {
+    text-align: center;
+    color: #ede9dc;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Buton top page */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #006680;
+    bottom: 40px;
+    right: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    transition:all 0.3s ease;
+}
+
+    .gotopbtn:hover {
+        background-color: #008fb3;
+    }
+
+
+.p1 {
+    padding: 6px;
+    background-color: #006680;
+    color: white;
+    font-family: 'Doppio One';
+}
